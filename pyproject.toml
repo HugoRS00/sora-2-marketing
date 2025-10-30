@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tradingwizard-ai-prompt"
+version = "0.1.0"
+description = "Daily TradingWizard AI prompt generator for trending AI trading topics."
+authors = [{ name = "TradingWizard AI" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+tradingwizard-prompt = "tradingwizard_ai_prompt.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
